@@ -10,9 +10,6 @@ def handle_client(client_socket):
         headers = request.split('\n')
         filename = headers[0].split()[1]
         
-        if filename == '/kelompok_ganteng.html':
-            filename = '/kelompok_ganteng.html'
-        
         filepath = os.getcwd() + filename
 
         if os.path.exists(filepath):
